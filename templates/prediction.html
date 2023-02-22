@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="colorlib">
+	<!-- Meta Description -->
+	<meta name="description" content="">
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>Travel</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!--
+			CSS
+			============================================= -->
+	<link rel="stylesheet" href="static/css/linearicons.css">
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+	<link rel="stylesheet" href="static/css/bootstrap.css">
+	<link rel="stylesheet" href="static/css/magnific-popup.css">
+	<link rel="stylesheet" href="static/css/jquery-ui.css">
+	<link rel="stylesheet" href="static/css/nice-select.css">
+	<link rel="stylesheet" href="static/css/animate.min.css">
+	<link rel="stylesheet" href="static/css/owl.carousel.css">
+	<link rel="stylesheet" href="static/css/main.css">
+</head>
+
+<body>
+	<header id="header">
+		<div class="header-top">
+			<div class="container">
+				<div class="row align-items-center">
+
+				</div>
+			</div>
+		</div>
+
+
+
+		<a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
+		</div>
+		<nav id="nav-menu-container">
+
+		</nav><!-- #nav-menu-container -->
+		</div>
+		</div>
+	</header><!-- #header -->
+
+	<!-- start banner Area -->
+	<section class="banner-area relative">
+		<div class="overlay overlay-bg"></div>
+		<div class="container">
+			<div class="row fullscreen align-items-center justify-content-between">
+				<div class="col-lg-6 col-md-6 banner-left">
+					<h6 class="text-white"></h6>
+					<h1 class="text-white">MEACHINE LEARNING</h1>
+					<p class="text-white">
+						Identifying airline passenger satisfaction using machine learning
+					</p>
+
+					<h4 class="text-white">PREDICTION:  {{prediction_text}}</h4>
+
+				</div>
+				<div class="col-lg-4 col-md-6 banner-right">
+					<ul class="nav nav-tabs" id="myTab" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="flight-tab" data-toggle="tab" href="#flight" role="tab"
+								aria-controls="flight" aria-selected="true">Features</a>
+
+
+					</ul>
+					<div class="tab-content" id="myTabContent">
+						<div class="tab-pane fade show active" id="flight" role="tabpanel" aria-labelledby="flight-tab">
+							<form class="form-wrap" method="post" action="/pred">
+								
+									<label id="label"  style="display:inline-block;
+									margin-bottom: 15px;"
+			                           for="Gender">Gender:</label>
+									<select name="Gender" id="Gender" style="padding: 3px;">
+										<option name="Female">Female</option>
+										<option name="Male">Male</option>
+									</select>
+									<br/>
+									<input type="number"  id="lname" name="Age" placeholder="Age"><br/>
+
+									<label id="label" style="
+									margin-top: 15px;
+									margin-bottom: 15px;"
+							       name="Type of Travel">Type of Travel:</label>
+									<select name="Type of Travel"id="Type of Travel" style="padding: 3px;">
+										<option name="Business travel">Business travel</option>
+										<option name="Personal Travel">Personal Travel</option>
+									</select>
+                                   <br/>
+
+									<label id="label"" style="display:inline-block;
+									margin-bottom: 15px;"
+								                 
+										name="Class">Class:</label>
+									<select name="Class" id="Class" style="padding: 3px;">
+										<option name="Business">Business</option>
+										<option name="Eco">Eco </option>
+										<option name="Eco Plus">Eco Plus </option>
+									</select>
+
+								<br/>
+									<input type="number" id="lname" name="Flight Distance" placeholder="Flight Distance" 
+									><br>
+
+								    <input type="number" id="lname" name="Inflight wifi service" placeholder="Inflight wifi service"
+									><br>
+
+									<input type="number" id="fname" name="Departure/Arrival time convenient" placeholder="Departure/Arrival time convenient"
+									><br>
+
+								    <input type="number" id="lname" name="Ease of Online booking" placeholder="Ease of Online booking"
+								><br>
+
+								    <input type="number" id="fname" name="Gate location" placeholder="Gate location"
+									><br>
+								    <input type="number" id="lname" name="Food and drink" placeholder="Food and drink"
+									><br>
+									<input type="number" id="lname" name="Online boarding" placeholder="Online boarding"
+									><br>
+                                    <input type="number" id="lname" name="Seat comfort" placeholder="Seat comfort"
+									><br>
+									<input type="number" id="fname" name="Inflight entertainment" placeholder="Inflight entertainment"
+									><br>
+								    <input type="number" id="fname" name="On-board service" placeholder="On-board service"
+									><br>
+									<input type="number" id="fname" name="Leg room service" placeholder="Leg room service"
+									><br>
+									<input type="number" id="fname" name="Baggage handling" placeholder="Baggage handling"
+									><br>
+									<input type="number" id="fname" name="Checkin service" placeholder="Checkin service"
+									><br>
+									<input type="number" id="lname" name="Inflight service" placeholder="Inflight service"
+									><br>
+									<input type="number" id="fname" name="Cleanliness" placeholder="Cleanliness"
+									><br>
+									<input type="number" id="lname" name="Departure Delay in Minutes" placeholder="Departure Delay in Minutes"><br>
+									<input type="number" id="fname" name="Arrival Delay in Minutes" placeholder="Arrival Delay in Minutes"><br>									><br>
+									<input type="submit" value="PREDICTION" class="primary-btn text-uppercase">
+									<!-- <a href="#" class="primary-btn text-uppercase">PREDICTION</a> -->
+								    <!-- <a href="#" class="primary-btn text-uppercase">PREDICTION</a> -->
+							</form>
+
+							
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div> 
+		{{prediction}} 
+
+	</div>
+	
+	<!-- End banner Area -->
+
+
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/easing.min.js"></script>
+	<script src="js/hoverIntent.js"></script>
+	<script src="js/superfish.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
